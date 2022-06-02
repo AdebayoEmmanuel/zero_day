@@ -4,4 +4,4 @@ for i in range(1,21):
 # check for odd using modulus and if statement
     if i % 2 != 0:
 # print odd
-        print(i)
+        print('i = ', i)
