@@ -16,7 +16,7 @@ class Warrior:
         """A warrior can attack with random
            value from 0.5 to 1.5 times maxAttack
         """
-        attack = (self.maxAttack * (random.random() + .5)
+        attack = self.maxAttack * (random.random() + .5)
         
         return attack
 
@@ -24,7 +24,7 @@ class Warrior:
         """A warrior can block an attack
            otherwise wont be fair
         """
-        block = (self.maxBlock * (random.random() + .5)
+        block = self.maxBlock * (random.random() + .5)
         
         return block
 
@@ -45,7 +45,7 @@ class Battle:
         print("{} is down to {} HP".format(warriorB.name, warriorB.health))
 
         if warriorB.health <= 0:
-            print("{} has is dead. {} Wins!".format(warriorB, warriorA))
+            print("{} is dead. {} Wins!".format(warriorB.name, warriorA.name))
             return "Game Over"
         else:
             return "Fight on"
