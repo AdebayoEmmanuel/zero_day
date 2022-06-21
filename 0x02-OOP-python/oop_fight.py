@@ -17,6 +17,7 @@ class Warrior:
            value from 0.5 to 1.5 times maxAttack
         """
         attack = (self.maxAttack * (random.random() + .5)
+        
         return attack
 
     def defense(self):
@@ -24,7 +25,9 @@ class Warrior:
            otherwise wont be fair
         """
         block = (self.maxBlock * (random.random() + .5)
+        
         return block
+
 class Battle:
     """Every round played has an attack and a defense that 
        produces an outcome as defined in the battle class
